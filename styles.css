@@ -1,0 +1,26 @@
+body{
+    background-color: #252324;
+}
+
+.box,
+.prompt{
+    position: relative;
+}
+
+.box{
+    width: 50rem;
+    height: 40rem;
+    background-color: #FAF5EB;
+    left: 53rem;
+    top: 15rem;
+    border-radius: 1.5rem;
+}
+
+.prompt{
+    width: 35rem;
+    height: 10rem;
+    background-color: #B6CDEE;
+    left: 7.5rem;
+    top: 5rem;
+    border-radius: 1rem;
+}
