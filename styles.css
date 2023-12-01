@@ -1,16 +1,27 @@
+:root{
+    --black: #252324;
+    --white: #FAF5EB;
+    --blue: #B6CDEE;
+    --gray: #CCD5CD;
+}
+
 body{
-    background-color: #252324;
+    background-color: var(--black);
 }
 
 .box,
-.prompt{
+.prompt,
+.option1,
+.option2,
+.optiom3,
+.option4{
     position: relative;
 }
 
 .box{
     width: 50rem;
     height: 40rem;
-    background-color: #FAF5EB;
+    background-color: var(--white);
     left: 53rem;
     top: 15rem;
     border-radius: 1.5rem;
@@ -19,8 +30,44 @@ body{
 .prompt{
     width: 35rem;
     height: 10rem;
-    background-color: #B6CDEE;
+    background-color: var(--blue);
     left: 7.5rem;
     top: 5rem;
     border-radius: 1rem;
 }
+
+.option1{
+    width: 10rem;
+    height: 6rem;
+    background-color: var(--gray);
+    border-radius: 0.75rem;
+    float: left
+}
+
+.option2{
+    width: 10rem;
+    height: 6rem;
+    background-color: var(--gray);
+    border-radius: 0.75rem;
+    float: right;
+}
+
+/* .option3{
+    width: 10rem;
+    height: 6rem;
+    background-color: var(--gray);
+    border-radius: 0.75rem;
+    left: -10rem;
+    top: 10rem;
+    display: inline-block;
+}
+
+.option4{
+    width: 10rem;
+    height: 6rem;
+    background-color: var(--gray);
+    border-radius: 0.75rem;
+    left: 0rem;
+    top: 20rem;
+    display: inline-block;
+} */
