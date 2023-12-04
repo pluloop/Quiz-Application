@@ -9,11 +9,19 @@ body{
     background-color: var(--black);
 }
 
+.prompt,
+.option1,
+.option2,
+.option3,
+.option4{
+    font-family: "Arial";
+}
+
 .box,
 .prompt,
 .option1,
 .option2,
-.optiom3,
+.option3,
 .option4{
     position: relative;
 }
@@ -34,6 +42,8 @@ body{
     left: 7.5rem;
     top: 5rem;
     border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .option1{
@@ -41,7 +51,9 @@ body{
     height: 6rem;
     background-color: var(--gray);
     border-radius: 0.75rem;
-    float: left
+    left: 10rem;
+    top: 7.5rem;
+    display: inline-block;
 }
 
 .option2{
@@ -49,17 +61,18 @@ body{
     height: 6rem;
     background-color: var(--gray);
     border-radius: 0.75rem;
-    float: right;
+    left: 20rem;
+    top: 7.5rem;
+    display: inline-block;
 }
 
-/* .option3{
+.option3{
     width: 10rem;
     height: 6rem;
     background-color: var(--gray);
     border-radius: 0.75rem;
-    left: -10rem;
+    left: 10rem;
     top: 10rem;
-    display: inline-block;
 }
 
 .option4{
@@ -67,7 +80,7 @@ body{
     height: 6rem;
     background-color: var(--gray);
     border-radius: 0.75rem;
-    left: 0rem;
-    top: 20rem;
+    left: 30.325rem;
+    top: 4rem;
     display: inline-block;
-} */
+}
