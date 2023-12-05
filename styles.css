@@ -15,6 +15,11 @@ body{
 .option3,
 .option4{
     font-family: "Arial";
+    font-size: 2rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .box,
@@ -42,8 +47,6 @@ body{
     left: 7.5rem;
     top: 5rem;
     border-radius: 1rem;
-    text-align: center;
-    font-size: 2rem;
 }
 
 .option1{
@@ -82,5 +85,4 @@ body{
     border-radius: 0.75rem;
     left: 30.325rem;
     top: 4rem;
-    display: inline-block;
 }
