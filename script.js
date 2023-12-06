@@ -3,6 +3,10 @@ const option1 = document.getElementById("o1");
 const option2 = document.getElementById("o2");
 const option3 = document.getElementById("o3");
 const option4 = document.getElementById("o4");
+const ovalue1 = document.getElementById("ovalue1");
+const ovalue2 = document.getElementById("ovalue2");
+const ovalue3 = document.getElementById("ovalue3");
+const ovalue4 = document.getElementById("ovalue4");
 
 const qna = {
     "How many rides are at Disney World?": [46, 25, 40, 54], // answer = 46
@@ -17,11 +21,19 @@ const qna = {
     "How many legs does a spider have?": [6, 4, 12, 8] // answer = 8
 };
 
+var answers = [46, 1989, 8000, 52, 1997, 24, 2007, 27, 8, 8];
+
 var questionNum = 0;
-var optionOne = 0;
+var optionValue1 = 0;
 
 prompt.innerText = Object.keys(qna)[questionNum];
-option1.innerText = Object.values(qna)[questionNum][optionOne];
-option2.innerText = Object.values(qna)[questionNum][optionOne+1];
-option3.innerText = Object.values(qna)[questionNum][optionOne+2];
-option4.innerText = Object.values(qna)[questionNum][optionOne+3];
+ovalue1.innerText = Object.values(qna)[questionNum][optionValue1];
+ovalue2.innerText = Object.values(qna)[questionNum][optionValue1+1];
+ovalue3.innerText = Object.values(qna)[questionNum][optionValue1+2];
+ovalue4.innerText = Object.values(qna)[questionNum][optionValue1+3];
+
+function checkChoice(){
+    
+}
+
+option1.addEventListener("click", checkChoice);
