@@ -7,6 +7,8 @@ const ovalue1 = document.getElementById("ovalue1");
 const ovalue2 = document.getElementById("ovalue2");
 const ovalue3 = document.getElementById("ovalue3");
 const ovalue4 = document.getElementById("ovalue4");
+const green = "#9BCD80";
+const red = "#FFC3C6";
 
 const qna = {
     "How many rides are at Disney World?": [46, 25, 40, 54], // answer = 46
@@ -22,9 +24,10 @@ const qna = {
 };
 
 var answers = [46, 1989, 8000, 52, 1997, 24, 2007, 27, 8, 8];
-
 var questionNum = 0;
 var optionValue1 = 0;
+var score = 0;
+var optionChosen = false;
 
 prompt.innerText = Object.keys(qna)[questionNum];
 ovalue1.innerText = Object.values(qna)[questionNum][optionValue1];
@@ -32,8 +35,67 @@ ovalue2.innerText = Object.values(qna)[questionNum][optionValue1+1];
 ovalue3.innerText = Object.values(qna)[questionNum][optionValue1+2];
 ovalue4.innerText = Object.values(qna)[questionNum][optionValue1+3];
 
-function checkChoice(){
-    
+function checkChoice1(option){
+    if (option == answers[questionNum]){
+        option1.style.backgroundColor = green;
+    }else{
+        option1.style.backgroundColor = red;
+    }
+
+    if (optionChosen == false){
+        score++;
+    }
 }
 
-option1.addEventListener("click", checkChoice);
+function checkChoice2(option){
+    if (option == answers[questionNum]){
+        option2.style.backgroundColor = green;
+    }else{
+        option2.style.backgroundColor = red;
+    }
+}
+
+function checkChoice3(option){
+    if (option == answers[questionNum]){
+        option3.style.backgroundColor = green;
+    }else{
+        option3.style.backgroundColor = red;
+    }
+}
+
+function checkChoice4(option){
+    if (option == answers[questionNum]){
+        option4.style.backgroundColor = green;
+    }else{
+        option4.style.backgroundColor = red;
+    }
+}
+
+function option1Pressed(){
+    option = ovalue1.innerText;
+
+    checkChoice1(option);
+}
+
+function option2Pressed(){
+    option = ovalue2.innerText;
+
+    checkChoice2(option);
+}
+
+function option3Pressed(){
+    option = ovalue3.innerText;
+
+    checkChoice3(option);
+}
+
+function option4Pressed(){
+    option = ovalue4.innerText;
+
+    checkChoice4(option);
+}
+
+option1.addEventListener("click", option1Pressed);
+option2.addEventListener("click", option2Pressed);
+option3.addEventListener("click", option3Pressed);
+option4.addEventListener("click", option4Pressed);
