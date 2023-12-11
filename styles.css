@@ -21,7 +21,9 @@ body{
 .option2,
 .option3,
 .option4,
-.next-button{
+.next-button,
+.score-fraction,
+.score-percent{
     font-family: "Arial";
     font-size: 2rem;   
 }
@@ -37,7 +39,10 @@ body{
 .ovalue2,
 .ovalue3,
 .ovalue4,
-.next-button-text{
+.next-button-text,
+.score-border,
+.score-fraction,
+.score-percent{
     position: relative;
 }
 
@@ -114,4 +119,19 @@ body{
 .next-button-text{
     left: 5.2rem;
     top: 0.4rem;
+}
+
+.score-border{
+    width: 30rem;
+    height: 10rem;
+    background-color: var(--gray);
+    border-radius: 0.75rem;
+    left: 10rem;
+    top: -10rem;
+}
+
+.score-fraction,
+.score-percent{
+    left: 0.5rem;
+    top: 2.5rem;
 }
